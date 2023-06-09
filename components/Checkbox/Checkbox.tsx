@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { FC, ChangeEvent, useRef } from 'react';
 import { boxShadow, transition } from '../styles';
-import { useId } from '@/hooks/useId';
+import { useId } from '../../hooks/useId';
 
 const Wrapper = styled.label`
     font-size: 1.8rem;
