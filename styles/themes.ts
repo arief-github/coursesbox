@@ -23,6 +23,7 @@ const dark = {
     logo: "#ff9933",
     logoShadow1: "#fed028",
     logoShadow2: "#e93020",
+    placeholder: "#504e55e6",
   },
 };
 
@@ -43,6 +44,7 @@ const light: AppTheme = {
     regular: "#504e55e6",
     button: "#E4EBF5e6",
     warning: "#504e55e6",
+    placeholder: "#bec8e4",
     valid: "#198754e6",
     invalid: "#dc3545e6",
     logo: "#ffffff",
