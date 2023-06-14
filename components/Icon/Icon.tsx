@@ -13,25 +13,14 @@ export type Props = {
     name: AvailableIcons;
 } & WrapperProps & React.SVGProps<SVGSVGElement>;
 
-const Wrapper = styled.div<WrapperProps>`
-    color: ${({ theme }) => theme.font.regular};
-    ${({ size }) => {
-        const sizeInRem = `${size}rem`;
-        return css`
-            width: ${sizeInRem};
-            height: ${sizeInRem};
-        `;
-    }}
-`;
 
 export const Icon: FC<Props> = ({ name, size= 2, ...rest }) => {
-    const Icon = Icons[name];
+    const Icon = styled(Icons[name])`
+        color: ${({ theme }) => theme.font.regular};
+    `;
+
     const sizeInRem = `${size}rem`;
     const sizes = { width: sizeInRem, height: sizeInRem };
 
-    return (
-        <Wrapper size={size}>
-            <Icon {...sizes} {...rest} />
-        </Wrapper>
-    )
+    return <Icon {...sizes} {...rest} />        
 };
