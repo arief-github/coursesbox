@@ -12,7 +12,7 @@ describe("Course test cases", () => {
           width: 1368,
           height: 770,
           alt: "Logo for Hands-On React",
-          src: "/hands-on_reactjs_cover.png",
+          src: "/covers/hands-on_reactjs_cover.png",
         }}
       >
         <>

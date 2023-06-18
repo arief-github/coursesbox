@@ -5,10 +5,11 @@ import styled from '@emotion/styled';
 import { Logo } from '../Logo/Logo';
 import { Input } from '../Input/Input';
 import { IconButton } from '../IconButton';
+import { StyledLink } from '../StyledLink';
 
 type Props = {
   isDark: boolean;
-  children: React.ReactNode
+  children: React.ReactNode;
   onThemeToggle: () => void;
 }
 
@@ -19,32 +20,26 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.background};
   padding: 0.5rem;
   grid-template-areas:
-    "header"
-    "nav"
-    "search"
-    "content"
-    "footer";
+    "header nav"
+    "search search"
+    "content content"
+    "footer footer";
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5vmin;
+  }
+
   @media (min-width: 500px) {
     grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-      "header  search"
-      "nav     nav"
-      "content content"
-      "footer  footer";
-    nav {
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
-  @media (min-width: 700px) {
+
+  @media (min-width: 960px) {
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-areas:
-      "header  search  nav"
+      "header  search nav"
       "content content content"
-      "footer  footer  footer";
-    nav {
-      flex-direction: row;
-    }
+      "footer  footer footer";
   }
 `;
 
@@ -53,17 +48,21 @@ const StyledLogo = styled(Logo)`
   display: flex;
   align-items: center;
   height: 4rem;
-  @media (max-width: 500px) {
-    justify-content: center;
+  & .logo_full {
+    display: none;
+  }
+  @media (min-width: 560px) {
+    & .logo_short {
+      display: none;
+    }
+    & .logo_full {
+      display: inline;
+    }
   }
 `;
 
-const LogoLink = styled.a`
-  all: unset;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.9;
-  }
+const LogoLink = styled(StyledLink)`
+ padding-right: 1vw;
 `;
 
 const MainNav = styled.nav`
@@ -104,7 +103,10 @@ export const Layout:FC<Props> = ({ children, onThemeToggle, isDark }) => (
     <Wrapper>
         <Link href="/" passHref>
             <LogoLink>
-                <StyledLogo size={3}>C8X</StyledLogo>
+                <StyledLogo size={3}>
+                  <span className='logo_short'>C8X</span>
+                  <span className='logo_full'>CoursesBox</span>
+                </StyledLogo>
             </LogoLink>
         </Link>
         <MainNav>
