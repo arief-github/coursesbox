@@ -15,13 +15,15 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>CoursesBox</title>
-        <meta name='description' content='Greate Development Course'/>
+        <meta name='description' content='Greate Development Course' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <CoursesWrapper>
         {
-          Array(4).fill(
-            <Course
+          Array(4).fill("")
+            .map(() => (
+              <Course
+                key={Math.random()}
                 header="Hands-On React. Build advanced React JS Frontend with expert"
                 link="/hands-on-reactjs"
                 imageProps={{
@@ -43,8 +45,8 @@ const Home: NextPage = () => {
                     <li>basic algorithms of Minesweeper</li>
                   </ul>
                 </>
-            </Course>
-          )
+              </Course>
+            ))
         }
       </CoursesWrapper>
     </>

@@ -71,13 +71,6 @@ const MainNav = styled.nav`
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  a {
-    cursor: pointer;
-    color: ${({ theme }) => theme.font.regular};
-    &:hover {
-      opacity: 0.7;
-    }
-  }
 `;
 
 const SearchInput = styled(Input)`
@@ -110,8 +103,16 @@ export const Layout:FC<Props> = ({ children, onThemeToggle, isDark }) => (
             </LogoLink>
         </Link>
         <MainNav>
-            <Link href="/all">All</Link>
-            <Link href="/news">News</Link>
+            <Link href="/all" passHref>
+              <StyledLink>
+                All
+              </StyledLink>
+            </Link>
+            <Link href="/news" passHref>
+              <StyledLink>
+                News
+              </StyledLink>
+            </Link>
             <IconButton name={isDark ? "Moon" : "Sun"} size={1} onClick={onThemeToggle} />
         </MainNav>
         <SearchInput icon='Search' placeholder='Search' onChange={() => null}/>
