@@ -25,5 +25,5 @@ export default function Custom404() {
                 <CustomLink>Go Home</CustomLink>
             </Link>
         </Wrapper>
-    )
+    );
 }

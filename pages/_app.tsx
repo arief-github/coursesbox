@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import type { AppProps } from 'next/app'
+import { useState, useEffect } from "react";
+import type { AppProps } from "next/app"
 
-import { Layout } from '../components/Layout/Layout'
-import { ThemeProvider } from '@emotion/react'
-import { Themes } from '../styles/themes'
+import { Layout } from "../components/Layout/Layout"
+import { ThemeProvider } from "@emotion/react"
+import { Themes } from "../styles/themes"
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [isDark, setIsDark] = useState(false);
@@ -19,11 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>    
       <ThemeProvider theme={theme}>
         <Layout onThemeToggle={toggleDark} isDark={isDark}>
-          <Component {...pageProps} />
+          <Component {...pageProps}/>
         </Layout> 
       </ThemeProvider>
     </>
-  ) 
+  ); 
 }
 
 export default MyApp
