@@ -3,13 +3,15 @@
 exports[`Input test cases Render check 1`] = `
 <DocumentFragment>
   <label
-    class="css-14xrrbw"
+    class="css-7e1mv2"
     height="7"
     width="20"
   >
-    <label>
+    <span
+      class="css-1grri41"
+    >
       label
-    </label>
+    </span>
     <div
       class="css-52ovgc"
     >
@@ -20,7 +22,6 @@ exports[`Input test cases Render check 1`] = `
     </div>
     <span
       class="css-1reg724"
-      role="alert"
     />
   </label>
 </DocumentFragment>
