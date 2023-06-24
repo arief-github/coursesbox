@@ -6,7 +6,7 @@ exports[`Layout test case Render Check 1`] = `
     class="css-1kt0pvq"
   >
     <a
-      class="css-1f7dby5"
+      class="css-siimz9"
       href="/"
     >
       <header
@@ -26,14 +26,16 @@ exports[`Layout test case Render Check 1`] = `
       </header>
     </a>
     <nav
-      class="css-gfwwxb"
+      class="css-3a6tr2"
     >
       <a
+        class="css-1vpkvtm"
         href="/all"
       >
         All
       </a>
       <a
+        class="css-1vpkvtm"
         href="/news"
       >
         News
@@ -60,11 +62,13 @@ exports[`Layout test case Render Check 1`] = `
       </button>
     </nav>
     <label
-      class="css-181n88t"
+      class="css-fabfz"
       height="7"
       width="20"
     >
-      <label />
+      <span
+        class="css-1grri41"
+      />
       <div
         class="css-52ovgc"
       >
@@ -89,7 +93,6 @@ exports[`Layout test case Render Check 1`] = `
       </div>
       <span
         class="css-1reg724"
-        role="alert"
       />
     </label>
     <main

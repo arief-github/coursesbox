@@ -2,7 +2,7 @@ import { FC } from 'react';
 import styled from '@emotion/styled';
 import { boxShadow, borderRadius } from '../styles';
 
-type Props = {
+export type Props = {
     header: string;
 }
 
