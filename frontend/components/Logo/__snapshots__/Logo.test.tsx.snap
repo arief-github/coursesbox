@@ -3,7 +3,7 @@
 exports[`Logo test cases Render check 1`] = `
 <DocumentFragment>
   <header
-    class="css-1ybr2v8"
+    class="css-fpjfvl"
   >
     CourseBox
   </header>
@@ -13,7 +13,7 @@ exports[`Logo test cases Render check 1`] = `
 exports[`Logo test cases Render with custom size 1`] = `
 <DocumentFragment>
   <header
-    class="css-1234ei9"
+    class="css-pomif2"
     size="10"
   >
     CoursesBox

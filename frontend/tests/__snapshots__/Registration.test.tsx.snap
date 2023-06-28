@@ -1,24 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login page Client validation check 1`] = `
-<span
-  class="css-1reg724"
-  role="alert"
->
-   
-</span>
-`;
-
-exports[`Login page Client validation check 2`] = `
-<span
-  class="css-1reg724"
-  role="alert"
->
-   
-</span>
-`;
-
-exports[`Login page Render check 1`] = `
+exports[`Registration Page Render check 1`] = `
 <div>
   <form>
     <div
@@ -28,26 +10,26 @@ exports[`Login page Render check 1`] = `
         class="css-2cjm8q"
       >
         <h2>
-          Login
+          Create an account
         </h2>
         <p>
           <label
-            class="css-10bmm8i"
-            height="8"
+            class="css-1i94xqg"
+            height="7"
             width="20"
           >
             <span
               class="css-1grri41"
             >
-              Identifier
+              username
             </span>
             <div
               class="css-52ovgc"
             >
               <input
                 class="css-1vniage"
-                name="identifier"
-                placeholder="username or email"
+                name="username"
+                placeholder="username"
               />
             </div>
             <span
@@ -58,14 +40,41 @@ exports[`Login page Render check 1`] = `
             </span>
           </label>
           <label
-            class="css-10bmm8i"
-            height="8"
+            class="css-1i94xqg"
+            height="7"
             width="20"
           >
             <span
               class="css-1grri41"
             >
-              Password
+              email
+            </span>
+            <div
+              class="css-52ovgc"
+            >
+              <input
+                class="css-1vniage"
+                name="email"
+                placeholder="email"
+                type="email"
+              />
+            </div>
+            <span
+              class="css-1reg724"
+              role="alert"
+            >
+               
+            </span>
+          </label>
+          <label
+            class="css-1i94xqg"
+            height="7"
+            width="20"
+          >
+            <span
+              class="css-1grri41"
+            >
+              password
             </span>
             <div
               class="css-52ovgc"
@@ -90,14 +99,14 @@ exports[`Login page Render check 1`] = `
             color="primary"
             type="submit"
           >
-            Sign In
+            Sign Up
           </button>
           <h3>
             <a
               class="css-u7kmks"
-              href="/registration"
+              href="/login"
             >
-              Create account
+              Login
             </a>
           </h3>
         </p>

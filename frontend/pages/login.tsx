@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"; 
 import { useForm } from "react-hook-form";
 
 import { CenteredTile } from "../components/Tile";
@@ -8,7 +8,7 @@ import { Input } from "../components/Input/Input";
 
 import { Button } from "../components/Button/Button";
 import { StyledLink } from "../components/StyledLink";
-import { Feedback } from "../components/Input/Feedback";
+import { ConditionalFeedback } from "../components/Input/Feedback";
 
 const StyledInput = styled(Input)`
   margin-bottom: 1rem;
@@ -37,11 +37,7 @@ const Login: NextPage = () => {
           label="Identifier"
           placeholder="username or email"
           feedback={
-            errors.identifier ? (
-              <Feedback>{errors.identifier?.message}</Feedback>
-            ) : (
-              <>&nbsp;</>
-            )
+            <ConditionalFeedback>{errors.identifier?.message}</ConditionalFeedback>
           }
           height={8}
           {...register("identifier", {
@@ -55,11 +51,7 @@ const Login: NextPage = () => {
           placeholder="password"
           role="textbox"
           feedback={
-            errors.password ? (
-              <Feedback>{errors.password?.message}</Feedback>
-            ) : (
-              <>&nbsp;</>
-            )
+           <ConditionalFeedback>{errors.password?.message}</ConditionalFeedback>
           }
           height={8}
           {...register("password", {
