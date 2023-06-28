@@ -17,7 +17,8 @@
     "@emotion/styled": "^11.8.1",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^8.1.1"
   },
   "resolutions": {
     "@types/react": "17.0.39",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@reduxjs/toolkit": "^1.8.1",
     "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -49,6 +51,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-storybook": "^0.5.7",
     "jest": "^27.5.1",
+    "msw": "^0.39.2",
     "prettier": "2.5.1",
     "react-hook-form": "^7.45.0",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
